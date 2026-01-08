@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Issue Board</title>
-    <link rel="stylesheet" href="./src/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div id="auth-section">
+            <h1>Smart Issue Board</h1>
+            <p>Please login to manage issues</p>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="loginBtn">Login</button>
+            <button id="signupBtn" class="secondary">Sign Up</button>
+        </div>
 
+        <div id="dashboard" class="hidden">
+            <header>
+                <div>
+                    Logged in: <strong id="userEmail"></strong>
+                </div>
+                <button id="logoutBtn" class="danger">Logout</button>
+            </header>
+
+            <section class="issue-form">
+                <h3>Create New Issue</h3>
+                <input type="text" id="title" placeholder="Issue Title">
+                <textarea id="desc" placeholder="Issue Description"></textarea>
+                <select id="priority">
+                    <option value="Low">Low Priority</option>
+                    <option value="Medium">Medium Priority</option>
+                    <option value="High">High Priority</option>
+                </select>
+                <input type="text" id="assignee" placeholder="Assigned To (Email or Name)">
+                <button id="submitIssue">Create Issue</button>
+            </section>
+
+            <hr>
+
+            <section class="filters">
+                <h3>Issue Board</h3>
+                <select id="filterStatus">
+                    <option value="All">All Statuses</option>
+                    <option value="Open">Open</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Done">Done</option>
+                </select>
+            </section>
+
+            <div id="issueList"></div>
+        </div>
+    </div>
     <script type="module" src="./src/main.js"></script>
-</body>
+  </body>
 </html>
