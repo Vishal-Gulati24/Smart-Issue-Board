@@ -46,7 +46,8 @@ While the current version meets all core requirements for a functional MVP, I ha
 
 - **Navigation Bar & Routing:** I plan to implement a dedicated Navigation Bar to manage a multi-page architecture. This would separate the "Issue Creation" form from the "Main Dashboard," providing a more focused user interface as the application scales.
 - **Account Recovery (Forgot Password):** To improve the user authentication flow, I intend to integrate Firebase’s `sendPasswordResetEmail` handler. This will allow users to securely recover their accounts via email, a critical feature for any production-ready SaaS application.
-- **Drag-and-Drop Interaction:** I would like to implement a Kanban-style drag-and-drop system using `SortableJS` or `Framer Motion`. This would allow team members to move issues between columns (e.g., from "In Progress" to "Done") more intuitively.
+**Custom Notification System (Toasts):** I plan to replace native browser alerts with a custom-built Toast notification system. This will provide non-blocking, color-coded feedback (Success/Error) for a more integrated UI/UX.
+* **Human-Readable Error Handling:** Implementing a mapping layer for Firebase Auth errors to "translate" technical error codes (like `auth/user-not-found`) into user-friendly guidance.
 - **Advanced Filtering & Search:** As the number of issues grows, adding a search bar and the ability to filter by "Priority" or "Assignee" would be the next step to maintain high usability.
 
 **Developed by Vishal Gulati** _Internship Assignment - 2026_
