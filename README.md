@@ -50,3 +50,10 @@ While the current version meets all core requirements for a functional MVP, I ha
 - **Advanced Filtering & Search:** As the number of issues grows, adding a search bar and the ability to filter by "Priority" or "Assignee" would be the next step to maintain high usability.
 
 **Developed by Vishal Gulati** _Internship Assignment - 2026_
+
+## 🛠️ Development Tools & Process
+* **IDE:** VS Code
+* **Version Control:** Git & GitHub
+* **Deployment:** Vercel (CI/CD)
+* **AI Assistance:** Gemini & ChatGPT 
+  * *Used for architecting the similarity algorithm, troubleshooting Firebase security rules, and optimizing CSS for mobile responsiveness.*
